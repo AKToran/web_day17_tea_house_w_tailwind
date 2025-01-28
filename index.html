@@ -16,20 +16,18 @@
         extend: {
           colors: {
             clifford: '#da373d',
+          },
+          fontFamily:{
+            manrope: ['Manrope', 'sans-serif'],
           }
         }
       }
     }
   </script>
-  <style>
-    .font-manrope {
-      font-family: "Manrope", serif;
-    }
-  </style>
 </head>
 
-<body class="font-manrope max-w-screen-xl mx-auto px-4 md:px-16 lg:px-28">
-  <header class=" md:flex pt-14 mb-20">
+<body class="font-manrope max-w-screen-2xl mx-auto">
+  <header class=" md:flex pt-14 mb-20 px-4 md:px-16 lg:px-28">
     <!-- text -->
     <div class="text-center md:text-left">
       <h1 class="text-4xl md:text-7xl leading-25 font-bold">It's good <br> tea time at The <br> Tea House</h1>
@@ -61,7 +59,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="px-4 md:px-16 lg:px-28">
     <!-- featured tea section -->
     <section class="py-8 md:py-12">
       <!-- title -->
@@ -133,9 +131,9 @@
 
     <!-- client review -->
     <section
-      class="my-20 bg-gradient-to-b md:bg-gradient-to-r  from-[#ff8938] to-[#FF0000] grid grid-cols-1 md:grid-cols-2 rounded-xl">
+      class="my-20 bg-gradient-to-b md:bg-gradient-to-r from-[#ff8938] to-[#FF0000] grid grid-cols-1 md:grid-cols-2 rounded-xl">
       <!-- texts -->
-      <div class="text-white space-y-6 py-10 md:py-20 px-14">
+      <div class="text-white space-y-6 py-10 md:py-20 px-14 bg-[url('images/bg_cup.png')] bg-no-repeat bg-bottom bg-[length:50%_auto]">
         <h1 class="text-3xl  md:text-5xl font-semibold pb-6">Meet Our Super Customers</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
           some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -187,12 +185,98 @@
       </div>
 
     </section>
-
-
   </main>
 
-  <footer>
+  <footer class="bg-orange-100 max-w-screen px-4 md:px-16 lg:px-28 py-20  text-gray-700">
+    <div class="flex justify-between items-center py-8 flex-col sm:flex-row gap-8">
+      <div>
+        <img src="images/cup.png" alt="">
+      </div>
+      <div class="flex items-center gap-6">
+        <h3 class="text-xl font-semibold">Ready to get started?</h3>
+        <button class="px-6 py-4 text-xl rounded-lg text-white font-bold bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Get Started</button>
+      </div>
+    </div>
+    <hr class="border-1 border-black my-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- first column -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="hover:text-orange-600" href="#">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">Insurance</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">About</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <!-- second column -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Our Services</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="hover:text-orange-600" href="#">Insurance</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">About</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <!-- third column -->
+      <div>
+        <h3 class="font-semibold text-lg mb-3">Help</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="hover:text-orange-600" href="#">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-orange-600" href="#">Insurance</a>
+          </li>
+        </ul>
+      </div>
 
+      <!-- fourth column -->
+      <div>
+        <h3 class="font-semibold text-lg mb-12">
+          Subscribe to our <br> Newsletter
+        </h3>
+        <div class="flex flex-col space-y-2">
+          <div>
+            <input
+              placeholder="Email Address"
+              type="text"
+              class="bg-transparent border-b-2 border-black w-5/6"
+            />
+            <i
+              class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"
+            ></i>
+            <div class="flex justify-between w-2/5 mb-2 mt-8">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center pt-4 mt-4">
+      <p class="text-sm text-gray-600">
+        © © 2025 UIDesign.to - All rights reserved.
+      </p>
+    </div>
   </footer>
 </body>
 
